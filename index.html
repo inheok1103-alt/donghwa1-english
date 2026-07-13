@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>이인혁 영어 · 동화고1 신규 론칭</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;600;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head><body><style>
+:root{
+  --navy:#1A2A3A; --navy2:#233648; --deep:#0F1B27;
+  --gold:#C5A869; --gold2:#E8D5A5; --gold-deep:#A8894B;
+  --ink:#222; --muted:#5b6570; --paper:#F8F9FA; --line:#E7E3D8;
+  --serif:'Hahmlet','Nanum Myeongjo','Apple SD Gothic Neo','Batang',serif;
+  --sans:'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.serif{font-family:var(--serif)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+.gold{color:var(--gold);font-weight:800}
+.reveal{opacity:1;transform:none}
+body.anim .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+body.anim .reveal.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){body.anim .reveal{opacity:1;transform:none;transition:none}}
+a{outline-offset:3px}a:focus-visible{outline:2px solid var(--gold)}
+.hero{position:relative;background:radial-gradient(120% 90% at 80% -10%,#33506b 0%,var(--navy) 45%,var(--deep) 100%);color:#fff;text-align:center;padding:clamp(64px,12vw,120px) 20px clamp(56px,9vw,96px);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 44px,rgba(197,168,105,.04) 44px 45px);pointer-events:none}
+.hero::after{content:"";position:absolute;width:520px;height:520px;right:-160px;top:-200px;background:radial-gradient(circle,rgba(197,168,105,.22),transparent 60%);border-radius:50%;filter:blur(6px)}
+.badge{display:inline-block;color:var(--gold2);font-weight:700;border:1px solid rgba(197,168,105,.6);padding:7px 18px;border-radius:30px;font-size:.82rem;letter-spacing:.04em;background:rgba(197,168,105,.08)}
+.hero h1{font-size:clamp(1.9rem,6.2vw,3.2rem);line-height:1.38;margin:1.4rem 0 1.2rem;font-weight:800;letter-spacing:-.01em;position:relative;z-index:1;text-wrap:balance}
+.hero h1 .gline{background:linear-gradient(90deg,var(--gold),var(--gold2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:clamp(.98rem,2.6vw,1.12rem);color:#d6dee7;max-width:640px;margin:0 auto;position:relative;z-index:1}
+.hero p strong{color:#fff}
+.cta-row{margin-top:2.2rem;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
+.btn{display:inline-block;padding:15px 30px;border-radius:12px;font-weight:800;font-size:1rem;text-decoration:none;transition:transform .15s,box-shadow .25s}
+.btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:var(--navy);box-shadow:0 10px 30px rgba(197,168,105,.35)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(197,168,105,.5)}
+.btn-line{border:1.5px solid rgba(255,255,255,.5);color:#fff}
+.btn-line:hover{border-color:var(--gold2);color:var(--gold2)}
+.stats{background:var(--navy);color:#fff}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.08)}
+.stat{background:var(--navy);padding:26px 14px;text-align:center}
+.stat .n{font-size:clamp(1.4rem,4.5vw,2rem);font-weight:800;color:var(--gold2);font-family:var(--serif)}
+.stat .l{font-size:.8rem;color:#b9c4cf;margin-top:6px;line-height:1.35}
+section.blk{padding:clamp(48px,8vw,84px) 0}
+.eyebrow{color:var(--gold-deep);font-weight:800;letter-spacing:.12em;font-size:.82rem;text-transform:uppercase}
+.h2{font-size:clamp(1.5rem,4.6vw,2.1rem);font-weight:800;color:var(--navy);margin:.5rem 0 .3rem;line-height:1.34;text-wrap:balance}
+.sub{color:var(--muted);font-size:1rem}
+.divider{width:52px;height:4px;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:3px;margin:14px auto 0}
+.inst{background:linear-gradient(180deg,#fff,#fbf9f3);text-align:center}
+.avatar{width:132px;height:132px;border-radius:50%;margin:0 auto 18px;padding:5px;background:linear-gradient(135deg,var(--gold2),var(--gold-deep));box-shadow:0 14px 40px rgba(26,42,58,.18)}
+.avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;border:3px solid #fff}
+.inst .role{color:var(--navy);font-weight:800;letter-spacing:.06em;font-size:.85rem}
+.inst h3{font-size:1.9rem;margin:.3rem 0;color:var(--navy)}
+.creds{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:14px 0}
+.chip{background:#fff;border:1px solid var(--line);color:#4a4a4a;padding:6px 14px;border-radius:20px;font-size:.83rem;font-weight:500}
+.quote{font-style:italic;color:var(--gold-deep);margin-top:14px;font-size:1.02rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#fff;padding:26px 24px;border-radius:14px;border-top:3px solid var(--navy);box-shadow:0 6px 22px rgba(26,42,58,.06);transition:transform .2s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(26,42,58,.12);border-top-color:var(--gold)}
+.card .k{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);font-weight:800;font-family:var(--serif);margin-bottom:12px}
+.card h4{color:var(--navy);font-size:1.12rem;margin-bottom:8px;font-weight:700}
+.card p{font-size:.94rem;color:#555}
+.devices{background:var(--navy);color:#fff}
+.devices .h2{color:#fff}.devices .sub{color:#b9c4cf}
+.dgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:28px}
+.device{background:rgba(255,255,255,.05);border:1px solid rgba(197,168,105,.25);border-radius:12px;padding:20px 22px}
+.device .t{color:var(--gold2);font-weight:800;font-size:1.05rem;margin-bottom:6px}
+.device .d{color:#cdd6df;font-size:.9rem}
+.device .ex{margin-top:10px;display:inline-block;font-size:.82rem;color:#9fb0c0;background:rgba(255,255,255,.06);padding:5px 12px;border-radius:8px}
+.sched{background:linear-gradient(180deg,#fbf9f3,#fff)}
+.weeks{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+.week{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 18px;position:relative;overflow:hidden}
+.week::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--gold-deep),var(--gold2))}
+.week .wn{font-family:var(--serif);font-weight:800;color:var(--gold-deep);font-size:1.05rem}
+.week .wt{font-weight:700;color:var(--navy);margin:6px 0 4px}
+.week .wd{font-size:.86rem;color:var(--muted);line-height:1.45}
+.meta-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:24px}
+.meta{background:var(--navy);color:#fff;padding:10px 20px;border-radius:30px;font-size:.9rem;font-weight:600}
+.meta b{color:var(--gold2)}
+.loop{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:28px}
+.step{flex:1;min-width:120px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 12px;text-align:center}
+.step .sn{width:34px;height:34px;border-radius:50%;background:var(--navy);color:var(--gold2);font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;font-family:var(--serif)}
+.step .st{font-weight:700;color:var(--navy)}
+.step .sd{font-size:.8rem;color:var(--muted);margin-top:3px}
+.voices{background:linear-gradient(180deg,#fff,#fbf9f3)}
+.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
+.vcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px 22px;position:relative;box-shadow:0 6px 22px rgba(26,42,58,.05)}
+.vcard .qm{font-family:var(--serif);font-size:2.4rem;line-height:.8;color:var(--gold);opacity:.55}
+.vq{color:#3a4653;font-size:.98rem;margin:8px 0 18px;min-height:78px;line-height:1.55}
+.vq.ph{color:#9aa4af;font-style:italic}
+.vm{display:flex;align-items:center;gap:10px;border-top:1px solid var(--line);padding-top:14px}
+.vm .va{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--gold2);display:flex;align-items:center;justify-content:center;font-weight:700;font-family:var(--serif);font-size:.95rem}
+.vm .vn{font-weight:700;color:var(--navy);font-size:.9rem}.vm .vg{color:var(--muted);font-size:.8rem}
+.vnote{text-align:center;margin-top:18px;font-size:.82rem;color:var(--gold-deep)}
+.apply{background:var(--navy);color:#fff;text-align:center}
+.apply .h2{color:#fff}
+.apply-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.apply-btn{display:flex;flex-direction:column;align-items:center;gap:4px;min-width:180px;padding:20px;border-radius:14px;text-decoration:none;transition:transform .15s}
+.apply-btn:hover{transform:translateY(-3px)}
+.apply-btn.primary{background:linear-gradient(135deg,var(--gold2),var(--gold));color:var(--navy)}
+.apply-btn.ghost{background:rgba(255,255,255,.06);border:1px solid rgba(197,168,105,.35);color:#fff}
+.apply-btn .big{font-size:1.25rem;font-weight:800;font-family:var(--serif)}
+.apply-btn .small{font-size:.82rem;opacity:.85}
+.final{background:radial-gradient(120% 100% at 20% 0%,#33506b,var(--navy) 55%,var(--deep));color:#fff;text-align:center;padding:clamp(52px,9vw,90px) 20px}
+.final h2{font-size:clamp(1.6rem,5vw,2.4rem);font-weight:800;line-height:1.4;text-wrap:balance}
+.final .g{color:var(--gold2)}
+.disclaimer{margin-top:30px;font-size:.78rem;color:#8b98a6;line-height:1.6;max-width:620px;margin:30px auto 0}
+.sticky{display:none}
+@media(max-width:640px){
+  .grid2,.dgrid,.grid3,.weeks{grid-template-columns:1fr}
+  .stats .wrap{grid-template-columns:repeat(2,1fr)}
+  .weeks{grid-template-columns:repeat(2,1fr)}
+  .loop{flex-direction:column}
+  body{padding-bottom:70px}
+  .sticky{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:99;background:var(--navy);padding:10px 14px;gap:10px;box-shadow:0 -6px 20px rgba(0,0,0,.25)}
+  .sticky a{flex:1;text-align:center;padding:13px;border-radius:10px;font-weight:800;text-decoration:none;font-size:.95rem}
+  .sticky .p{background:linear-gradient(135deg,var(--gold2),var(--gold));color:var(--navy)}
+  .sticky .t{border:1.5px solid rgba(255,255,255,.4);color:#fff}
+}
+</style>
+<header class="hero">
+  <span class="badge reveal">이인혁 영어 · 동화고1 신규 론칭 2026</span>
+  <h1 class="serif reveal">동화고 영어,<br><span class="gline">압도적 분석력</span>과 <span class="gline">논리</span>로<br>최상위권을 설계합니다.</h1>
+  <p class="reveal">중등 암기식 영어로는 동화고의 방대한 <strong>외부 고난도 지문</strong>과 <strong>서술형(반영 39%)</strong>을 뚫을 수 없습니다. 변형 지문을 꿰뚫는 분석력과 조건형 서술형 훈련이 등급을 가릅니다.</p>
+  <div class="cta-row reveal">
+    <a class="btn btn-gold" href="tel:031-551-1131">무료 진단 신청</a>
+    <a class="btn btn-line" href="#program">프로그램 보기</a>
+  </div>
+</header>
+<section class="stats"><div class="wrap">
+  <div class="stat reveal"><div class="n">16+5</div><div class="l">선택형 16 · 논술형 5<br>실물 기말 구성</div></div>
+  <div class="stat reveal"><div class="n">39%</div><div class="l">논술형 반영<br>등급을 가르는 축</div></div>
+  <div class="stat reveal"><div class="n">8할+</div><div class="l">외부 고난도지문<br>학평·원서 각색</div></div>
+  <div class="stat reveal"><div class="n">4주</div><div class="l">여름 방학특강<br>2학기 선점</div></div>
+</div></section>
+<section class="blk inst"><div class="wrap reveal">
+  <div class="avatar"><img src="data:image/jpeg;base64,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" alt="이인혁 강사"></div>
+  <div class="role">DONGHWA ENGLISH SPECIALIST</div>
+  <h3 class="serif">이인혁 <span style="color:var(--gold-deep);font-size:1.1rem">(Ray)</span></h3>
+  <div class="creds">
+    <span class="chip">영어교육 전공</span><span class="chip">중등 정교사 2급</span><span class="chip">현) 대치명인학원</span><span class="chip">이투스 영어 연간 검토단</span><span class="chip">자이스토리 문항 검토</span>
+  </div>
+  <p class="quote serif">"오답이 곧 처방이다 — 점수가 아니라 반복되는 원인부터 봅니다."</p>
+</div></section>
+<section class="blk" id="program"><div class="wrap">
+  <div style="text-align:center" class="reveal">
+    <div class="eyebrow">GRADE 1 · FIRST</div>
+    <h2 class="h2 serif">1학년: 중등 최상위권의 착각을 깨는 첫 관문</h2>
+    <p class="sub">방대한 부교재(Supreme)와 외부 지문, 어떻게 대비할 것인가</p><div class="divider"></div>
+  </div>
+  <div class="grid2" style="margin-top:34px">
+    <div class="card reveal"><div class="k">01</div><h4>유의어·반의어 그물망 확장</h4><p>본문 단어가 그대로 나오지 않습니다. 학평·원서급 어휘를 유의어로 치환하는 동화고 방식에 대비해, 핵심어를 동의어·반의어·연어로 확장합니다.</p></div>
+    <div class="card reveal"><div class="k">02</div><h4>지문 변형·구조 해체</h4><p>단순 암기를 무력화하는 외부지문·문장 변형에 당황하지 않도록, 처음 보는 문장도 주어·동사·절 경계를 잡아 정확히 해석하는 구문 독해력을 장착합니다.</p></div>
+    <div class="card reveal"><div class="k">03</div><h4>논술형 39% 조건 영작</h4><p>반영 39%의 서술형이 등급을 가릅니다. 재배열 영작·조건 영작·본문 찾아쓰기·형태 변형을 조건 체크리스트로 훈련해 감점을 봉쇄합니다.</p></div>
+    <div class="card reveal"><div class="k">04</div><h4>오답코드 관리 시스템</h4><p>틀린 문제를 단어·문법·긴문장·흐름·서술형·시간(W·G·S·F·WR·T)으로 분류해, 같은 코드가 반복되지 않도록 처방과 재평가로 추적합니다.</p></div>
+  </div>
+</div></section>
+<section class="blk devices"><div class="wrap">
+  <div style="text-align:center" class="reveal">
+    <div class="eyebrow" style="color:var(--gold2)">EXAM DEVICE</div>
+    <h2 class="h2 serif">점수를 가르는 동화고 출제 장치 4가지</h2>
+    <p class="sub">실물 기말 전수분석에서 확인된 장치입니다.</p>
+  </div>
+  <div class="dgrid">
+    <div class="device reveal"><div class="t">유의어 치환</div><div class="d">본문 표현을 동의어로 바꿔 출제</div><div class="ex">draw on → rely on</div></div>
+    <div class="device reveal"><div class="t">어법 복합 오류</div><div class="d">수일치·준동사·관계사를 한 문장에 중첩</div><div class="ex">분사·지칭·which</div></div>
+    <div class="device reveal"><div class="t">조건부 영작</div><div class="d">문법·단어수·어형을 지정한 순수 영작</div><div class="ex">재배열 · 형태 변형</div></div>
+    <div class="device reveal"><div class="t">외부 연계지문</div><div class="d">교과서 밖 학평·원서 고난도 지문 각색</div><div class="ex">지문의 8할+</div></div>
+  </div>
+</div></section>
+<section class="blk sched"><div class="wrap">
+  <div style="text-align:center" class="reveal">
+    <div class="eyebrow">SUMMER INTENSIVE</div>
+    <h2 class="h2 serif">여름 4주 특강 — 2학기를 먼저 만난다</h2>
+    <p class="sub">복기 → 기반 → 장치 → 검증. 7/20(월) 스타트.</p><div class="divider"></div>
+  </div>
+  <div class="weeks">
+    <div class="week reveal"><div class="wn">1주</div><div class="wt">복기</div><div class="wd">1학기 기말 오답코드 진단 · 감점 지도</div></div>
+    <div class="week reveal"><div class="wn">2주</div><div class="wt">기반</div><div class="wd">어법 코어 · YBM 공통영어2 본문 선행</div></div>
+    <div class="week reveal"><div class="wn">3주</div><div class="wt">장치</div><div class="wd">유의어 치환 · 조건 영작 · 유형 전환</div></div>
+    <div class="week reveal"><div class="wn">4주</div><div class="wt">검증</div><div class="wd">동화고형 실전 세트 · 재평가 리포트</div></div>
+  </div>
+  <div class="meta-row reveal">
+    <span class="meta"><b>7/20(월)</b> 스타트</span><span class="meta">주 2회 · 총 <b>8회</b></span><span class="meta">소수 정원</span><span class="meta">클리닉 <b>무제한</b></span>
+  </div>
+</div></section>
+<section class="blk"><div class="wrap">
+  <div style="text-align:center" class="reveal">
+    <div class="eyebrow">WHAT REMAINS</div>
+    <h2 class="h2 serif">특강이 끝나면 학생 손에 남는 것</h2>
+    <p class="sub">느낌이 아니라 문서로 남습니다.</p><div class="divider"></div>
+  </div>
+  <div class="grid3" style="margin-top:32px">
+    <div class="card reveal"><div class="k">A</div><h4>오답코드 진단표</h4><p>1학기 기말 문항별 감점 지도와 코드 통계.</p></div>
+    <div class="card reveal"><div class="k">B</div><h4>분석지 · 변형 문항</h4><p>YBM 공통영어2 본문 주석 + 동화고형 변형 세트.</p></div>
+    <div class="card reveal"><div class="k">C</div><h4>학부모 월간 리포트</h4><p>줄어든 약점 · 재평가 통과 · 다음 4주 처방.</p></div>
+  </div>
+</div></section>
+<section class="blk"><div class="wrap">
+  <div style="text-align:center" class="reveal">
+    <div class="eyebrow">CLINIC LOOP</div>
+    <h2 class="h2 serif">수업은 닫히는 루프입니다</h2>
+    <p class="sub">분석과 처방이 문서로 남고, 다음 수업에서 반드시 다시 확인됩니다.</p><div class="divider"></div>
+  </div>
+  <div class="loop">
+    <div class="step reveal"><div class="sn">1</div><div class="st">진단</div><div class="sd">시험지·답안</div></div>
+    <div class="step reveal"><div class="sn">2</div><div class="st">분석</div><div class="sd">출제 관점 해부</div></div>
+    <div class="step reveal"><div class="sn">3</div><div class="st">처방</div><div class="sd">학생별 과제</div></div>
+    <div class="step reveal"><div class="sn">4</div><div class="st">재평가</div><div class="sd">다른 문항 확인</div></div>
+    <div class="step reveal"><div class="sn">5</div><div class="st">보고</div><div class="sd">학부모 리포트</div></div>
+  </div>
+</div></section>
+<section class="blk voices"><div class="wrap">
+  <div style="text-align:center" class="reveal">
+    <div class="eyebrow">THE PROMISE</div>
+    <h2 class="h2 serif">이인혁 영어의 3가지 약속</h2>
+    <p class="sub">후기보다 먼저, 시스템으로 증명합니다.</p><div class="divider"></div>
+  </div>
+  <div class="vgrid">
+    <div class="vcard reveal"><div class="qm">01</div><p class="vq">감이 아니라 <b>동화고 기말 전수분석</b>에서 시작합니다. 선택형 16·논술형 5·반영 39%의 실제 구조를 근거로 대비합니다.</p><div class="vm"><div class="va">&#10003;</div><div><div class="vn">실물 근거</div><div class="vg">Evidence-based</div></div></div></div>
+    <div class="vcard reveal"><div class="qm">02</div><p class="vq">틀린 문제를 <b>W·G·S·F·WR·T 오답코드</b>로 분류합니다. 같은 실수가 반복되지 않도록 처방하고 다른 문항으로 재평가합니다.</p><div class="vm"><div class="va">&#10003;</div><div><div class="vn">원인 관리</div><div class="vg">Error-code system</div></div></div></div>
+    <div class="vcard reveal"><div class="qm">03</div><p class="vq">매 수업 후 <b>24시간 안에 리포트</b>를 남깁니다. 진도·약점·다음 과제를 학생과 학부모가 함께 확인합니다.</p><div class="vm"><div class="va">&#10003;</div><div><div class="vn">기록·보고</div><div class="vg">24h dual report</div></div></div></div>
+  </div>
+</div></section>
+<section class="blk apply"><div class="wrap reveal">
+  <div class="eyebrow" style="color:var(--gold2)">APPLY</div>
+  <h2 class="h2 serif">신청은 이렇게 — 시험지 한 장이면 됩니다</h2>
+  <p class="sub" style="color:#b9c4cf">1학기 시험지를 가져오시면 첫 상담 20분 안에 오답코드를 짚어 드립니다.</p>
+  <div class="apply-row">
+    <a class="apply-btn primary" href="tel:031-551-1131"><span class="big">전화 신청</span><span class="small">031-551-1131</span></a>
+    <a class="apply-btn ghost" href="sms:031-551-1131?&body=동화고1 영어 무료 진단 신청합니다. 학년/이름: ">
+      <span class="big">문자 신청</span><span class="small">'무료 진단' 문자 보내기</span></a>
+    <a class="apply-btn ghost" href="mailto:gen1103@naver.com?subject=동화고1 영어 무료 진단 신청&body=학년/이름:%0D%0A연락처:%0D%0A희망 요일/시간:%0D%0A(1학기 시험지 지참)">
+      <span class="big">이메일 신청</span><span class="small">gen1103@naver.com</span></a>
+    <a class="apply-btn ghost" href="https://www.threads.com/@english_ray_t"><span class="big">Threads</span><span class="small">@english_ray_t</span></a>
+  </div>
+</div></section>
+<section class="final"><div class="wrap reveal">
+  <h2 class="serif">시험지를 가져오세요.<br><span class="g">점수가 아니라 원인부터</span> 보겠습니다.</h2>
+  <p class="disclaimer">본 프로그램은 동화고 공식 프로그램이 아닌, 동화고 학생을 대상으로 한 외부 교육 프로그램입니다. 학교 로고·합격 실적을 강사 성과로 사용하지 않으며, 성적 향상은 개인차가 있습니다. 시험 분석은 공개된 학교 공시 자료와 실물 시험지 분석에 근거합니다.</p>
+</div></section>
+<div class="sticky">
+  <a class="p" href="tel:031-551-1131">무료 진단 전화</a>
+  <a class="t" href="https://www.threads.com/@english_ray_t">Threads</a>
+</div>
+<script>
+document.body.classList.add('anim');
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%4*60)+'ms';io.observe(el)});
+</script>
+</body></html>
